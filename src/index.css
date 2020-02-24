@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.max{
+  width: 300px;
+  animation: show ease-out .5s;
+}
+.min{
+  width: 70px;
+  animation: hide .5s ease-out;
+}
+
+.spacetop{
+  margin-top: 200px;
+
+}
+
+.tablebutton{
+  background: #529DED;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+@keyframes show{
+  from{
+    width: 70px;
+  }
+  to{
+    width: 300px;
+  }
+}
+
+@keyframes hide{
+  from{
+    width: 300px;
+  }
+  to{
+    width: 70px;
+  }
+}
+.hide{
+  display: none;
+  
+}
+.maxwidth{
+  width:calc(100%-300px);
+  margin-left:300px;
+  padding:'30px';
+  animation: expands .5s ease-out;
+}
+.minwidth{
+  width:calc(100%-70px);
+  margin-left: 70px;
+  animation: shrink .5s ease-out;
+}
+
+@keyframes expands{
+  from{
+    width:calc(100%-70px);
+    margin-left: 70px;
+  }
+  to{
+    width:calc(100%-300px);
+    margin-left:300px;
+  }
+}
+
+@keyframes shrink{
+  from{
+    width:calc(100%-300px);
+    margin-left:300px;
+   
+  }
+  to{
+    width:calc(100%-70px);
+    margin-left: 70px;
+  }
+}
+.links{
+  cursor: pointer;
+}
+.links:hover{
+  background: #CEE6FF
+}
